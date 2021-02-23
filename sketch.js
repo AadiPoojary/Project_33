@@ -141,7 +141,7 @@ function draw() {
    if(gameState===END)
    {
      push();
-     strokeWeight(1);
+     strokeWeight(4);
      stroke("red")
      textSize(60);
      fill(txtcolor)
@@ -170,7 +170,7 @@ function draw() {
 
 function mousePressed()
 {
-  if(gameState!==END)
+  if(gameState!= END)
   {
     turn=turn+1;
     particles=new Particle(mouseX,10,10,10);
